@@ -7,6 +7,7 @@ class Rectangle {
         Rectangle ();
         Rectangle (int, int);
         int area (void) {return width*height;}
+        ~Rectangle () { cout << "bye" << endl; }
 };
 
 Rectangle::Rectangle () {
@@ -21,8 +22,8 @@ Rectangle::Rectangle (int x, int y) {
 
 int main() {
     Rectangle rect(2,2);
-    Rectangle rect2;
+    //Rectangle rect2;
     std::cout << rect.area() << endl;
-    std::cout << rect2.area();
+    //std::cout << rect2.area() << endl;
     return 0;
 }
